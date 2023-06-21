@@ -12,20 +12,20 @@ const socials = [
  
   {
     icon: faGithub,
-    url: "https://github.com/Jlovellealfeche",
+    url: "https://github.com",
   
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com/in/joan-lovelle-alfeche",
+    url: "https://www.linkedin.com",
   },
   {
     icon: faStackOverflow,
-    url: "https://stackoverflow.com/users/15541200/jlovellealfeche",
+    url: "https://stackoverflow.com",
   },
   {
     icon: faYoutube,
-    url: "https://www.youtube.com/channel/UClP7r1sExpkOc2-hNYn6Vqg",
+    url: "https://www.youtube.com",
   },
 ];
 

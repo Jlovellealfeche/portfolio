@@ -27,6 +27,13 @@ const LandingSection = () => {
     validationSchema: Yup.object({}),
   });
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    const contactmeSection = document.getElementById("contactme-section");
+    contactmeSection.scrollIntoView({ behavior: "smooth" });
+    window.history.pushState(null, "", "/#contact-me");
+  };
+
   return (
     <FullScreenSection
       isDarkBackground
@@ -83,6 +90,9 @@ const LandingSection = () => {
             </VStack>
           </form>
         </Box>
+        <a href="/#contact-me" onClick={handleClick}>
+          Contact me
+        </a>
       </VStack>
     </FullScreenSection>
   );
