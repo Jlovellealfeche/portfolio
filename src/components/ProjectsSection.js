@@ -31,6 +31,13 @@ const projects = [
 ];
 
 const ProjectsSection = () => {
+  const handleClick = (event) => {
+    event.preventDefault();
+    const projectsSection = document.getElementById("projects-section");
+    projectsSection.scrollIntoView({ behavior: "smooth"});
+    window.history.pushState(null, "", "/#projects");
+  };
+  
   return (
     <FullScreenSection
       backgroundColor="#14532d"
@@ -56,6 +63,10 @@ const ProjectsSection = () => {
           />
         ))}
       </Box>
+      // eslint-disable-next-line no-undef
+      <a href="/#projects" onClick={handleClick}>
+        Projects
+      </a>
     </FullScreenSection>
   );
 };

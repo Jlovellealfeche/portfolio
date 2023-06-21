@@ -13,6 +13,7 @@ const socials = [
   {
     icon: faGithub,
     url: "https://github.com/Jlovellealfeche",
+  
   },
   {
     icon: faLinkedin,
@@ -65,7 +66,7 @@ const Header = () => {
                 {socials.map((social, index) => (
                   <li key={index}>
                     <a href={social.url} className={`${social.iconName} social`}>
-                      <FontAwesomeIcon icon={social.icon} />
+                      <FontAwesomeIcon icon={social.icon} size="2x" />
                     </a>
                   </li>
                 ))}
